@@ -1,0 +1,8 @@
+version: 2
+
+seeds:
+  - name: seed_tmdb_5000_movies
+    config:
+      column_types:
+        revenue: BIGNUMERIC
+        runtime: FLOAT64

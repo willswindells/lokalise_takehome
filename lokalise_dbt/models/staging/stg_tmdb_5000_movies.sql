@@ -1,0 +1,46 @@
+--
+-- Movies Staging from Seed
+--
+
+with
+
+movies as (
+
+    select  
+    -- id, budget
+    * 
+    from {{ ref('seed_tmdb_5000_movies') }}
+
+),
+
+staging_movies as 
+(
+select 
+*
+-- id,
+-- budget
+--,
+-- genres,
+-- homepage,
+-- keywords,
+-- original_language,
+-- original_title,
+-- overview,
+-- popularity,
+-- production_companies,
+-- production_countries,
+-- release_date,
+-- revenue,
+-- runtime,
+-- spoken_languages,
+-- 'status',
+-- tagline,
+-- title,
+-- vote_average,
+-- vote_count
+from 
+movies
+)
+
+select * 
+from staging_movies

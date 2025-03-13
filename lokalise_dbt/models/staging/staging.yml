@@ -1,0 +1,18 @@
+version: 2
+
+#Staging Models
+models:
+  - name: stg_tmdb_5000_credits
+    columns:
+      - name: movie_id
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_tmdb_5000_movies
+    columns:
+      - name: id
+        tests:
+          - not_null
+
+    +materialized: table
