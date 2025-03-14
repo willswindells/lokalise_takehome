@@ -2,7 +2,11 @@ version: 2
 
 seeds:
   - name: seed_tmdb_5000_movies
+    description: seed file for 5000 movies from kaggle
     config:
       column_types:
         revenue: BIGNUMERIC
         runtime: FLOAT64
+
+  - name: seed_tmdb_5000_credits
+    description: seed file for 5000 credit info from kaggle

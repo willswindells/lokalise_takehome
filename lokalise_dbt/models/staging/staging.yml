@@ -3,16 +3,19 @@ version: 2
 #Staging Models
 models:
   - name: stg_tmdb_5000_credits
+    description: staging table for movie credits
     columns:
       - name: movie_id
+        description: Repesenting Movie_Id
         tests:
           - not_null
           - unique
 
   - name: stg_tmdb_5000_movies
+    description: staging table for movie s
     columns:
-      - name: id
+      - name: id 
+        description: Id repesenting Movie Id
         tests:
           - not_null
-
-    +materialized: table
+          - unique

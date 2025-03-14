@@ -1,0 +1,21 @@
+version: 2
+
+#Int Models
+models:
+  - name: int_tmdb_5000_credits
+    description: materilised table with processed Json for movies
+    columns:
+      - name: movie_id
+        description: Id repesenting Movie_Id
+        tests:
+          - not_null
+          - unique
+
+  - name: int_tmdb_5000_movies
+    description: materilised table with processed Json for movie credits
+    columns:
+      - name: id
+        description: Id repesenting Movie Id
+        tests:
+          - not_null
+          - unique

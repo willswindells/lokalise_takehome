@@ -8,7 +8,8 @@ movies as (
 
     select  
     * 
-    from {{ ref('seed_tmdb_5000_movies') }}
+    from 
+        {{ ref('seed_tmdb_5000_movies') }}
 
 ),
 
@@ -36,8 +37,9 @@ title,
 vote_average,
 vote_count
 from 
-movies
+    movies
 )
 
 select * 
-from staging_movies
+from 
+    staging_movies
