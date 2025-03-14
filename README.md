@@ -1,11 +1,11 @@
 
-
 ### Setup
 Pipenv for enviroment managment
-Bigquery database - 
+Bigquery database
 
-Pipenv from 2025_Lokalise_takehome folder
-dbt from lokalise_dbt folder
+
+Pipenv from here 2025_Lokalise_takehome 
+dbt init from lokalise_dbt folder
 
 Can change to DuckDb solution if needed, I am not familiar with it so used GoogleBQ
 Would also use the UI on BQ to walk through the models for a show and tell
